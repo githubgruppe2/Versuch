@@ -1,0 +1,28 @@
+git add .
+#Datei im Repository hinzufügen und als 'Commit stage' stellen. 
+
+git commit -m "First commit"
+# Commits die Änderungen und bereitet sie zum verschieben ins remote Repository vor. 
+
+git push origin master
+# Schiebt die lokalen Änderungen in das remote Repository
+
+git clone https://github.com/USERNAME/REPOSITORY.git
+# Kopiert ein Repository auf den eigenen Computer
+
+git fetch remotename
+# Holt Updates von anderen aus dem Repository ohne sie mit den eigenen Daten zusammenzufügen
+
+git merge remotename/branchname
+# Fügt Updates die online gestellt sind mit den eigenen Daten zusammen
+
+git pull remotename branchname
+# Nimmt online gestellte Änderungen und fügt sie mit den Lokalen Daten zusammen
+
+git remote add origin https://github.com/user/repo.git
+# Neues remote erstellen
+
+git remote -v
+# Verifizierung
+origin  https://github.com/user/repo.git (fetch)
+origin  https://github.com/user/repo.git (push)
